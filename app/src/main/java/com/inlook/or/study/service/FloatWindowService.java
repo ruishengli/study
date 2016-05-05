@@ -5,11 +5,9 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.study.android.floatwindow.FloatWindowManager;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningTaskInfo;
-import android.app.Application;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -18,6 +16,8 @@ import android.content.pm.ResolveInfo;
 import android.os.Handler;
 import android.os.IBinder;
 import android.util.Log;
+
+import com.inlook.or.study.floatwindow.FloatWindowManager;
 
 public class FloatWindowService extends Service {
 

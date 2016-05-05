@@ -1,6 +1,5 @@
 package com.inlook.or.study.service;
 
-import com.study.android.activity.LockScreenActivity;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -9,6 +8,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.IBinder;
 import android.util.Log;
+
+import com.inlook.or.study.activity.LockScreenActivity;
 
 public class LockScreenService extends Service {
 

@@ -1,18 +1,15 @@
 package com.inlook.or.study.activity.customview;
 
-import com.study.android.R;
-import com.study.android.view.DynamicPointTextView;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.widget.TextView;
+import com.inlook.or.study.R;
+import com.inlook.or.study.view.DynamicPointTextView;
 
 public class DynamicPointTextActivity extends Activity {
 
     private DynamicPointTextView mTextView;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

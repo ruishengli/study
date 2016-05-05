@@ -8,20 +8,20 @@ import java.util.Set;
 
 import android.text.TextUtils;
 
-import com.study.android.activity.anim.SimpleBounceAnimatorActivity;
-import com.study.android.activity.bitmap.BitmapActivity;
-import com.study.android.activity.bitmap.PorterDuffBitmapActivity;
-import com.study.android.activity.bitmap.RoundBitmapActivity;
-import com.study.android.activity.customview.ValueIncrementActivity;
-import com.study.android.activity.customview.DynamicPointTextActivity;
-import com.study.android.activity.customview.ShineTextActivity;
-import com.study.android.activity.customview.CircleBarActivity;
-import com.study.android.activity.sensor.CompassActivity;
-import com.study.android.activity.sensor.StepActivity;
-import com.study.android.activity.ui.ToolbarActivity;
-import com.study.android.activity.ui.TranslucentSystemBarActivity;
-import com.study.android.model.UIListItem;
-import com.study.android.view.CircleBar;
+import com.inlook.or.study.activity.anim.SimpleBounceAnimatorActivity;
+import com.inlook.or.study.activity.bitmap.BitmapActivity;
+import com.inlook.or.study.activity.bitmap.PorterDuffBitmapActivity;
+import com.inlook.or.study.activity.bitmap.RoundBitmapActivity;
+import com.inlook.or.study.activity.customview.CircleBarActivity;
+import com.inlook.or.study.activity.customview.DynamicPointTextActivity;
+import com.inlook.or.study.activity.customview.ShineTextActivity;
+import com.inlook.or.study.activity.customview.ValueIncrementActivity;
+import com.inlook.or.study.activity.sensor.CompassActivity;
+import com.inlook.or.study.activity.sensor.StepActivity;
+import com.inlook.or.study.activity.ui.ToolbarActivity;
+import com.inlook.or.study.activity.ui.TranslucentSystemBarActivity;
+import com.inlook.or.study.model.UIListItem;
+
 
 public class StudyUIMap {
 

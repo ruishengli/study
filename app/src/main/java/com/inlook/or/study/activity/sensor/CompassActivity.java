@@ -7,12 +7,12 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.animation.AccelerateInterpolator;
 
-import com.study.android.R;
-import com.study.android.activity.BaseAppCompatActivity;
-import com.study.android.view.CompassView;
+import com.inlook.or.study.R;
+import com.inlook.or.study.activity.BaseAppCompatActivity;
+import com.inlook.or.study.view.CompassView;
+
 
 public class CompassActivity extends BaseAppCompatActivity {
 

@@ -1,7 +1,5 @@
 package com.inlook.or.study.activity.bitmap;
 
-import com.study.android.R;
-import com.study.android.utils.ImageUtils;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -10,6 +8,10 @@ import android.os.Bundle;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
+
+import com.inlook.or.study.R;
+import com.inlook.or.study.utils.ImageUtils;
+
 /**
  * 显示圆角图片
  * RoundBitmapActivity

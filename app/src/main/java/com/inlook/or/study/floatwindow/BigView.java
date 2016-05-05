@@ -1,12 +1,13 @@
 package com.inlook.or.study.floatwindow;
 
-import com.study.android.R;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.inlook.or.study.R;
 
 public class BigView extends LinearLayout implements View.OnClickListener{
     

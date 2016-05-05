@@ -2,7 +2,6 @@ package com.inlook.or.study.activity.bitmap;
 
 import java.lang.ref.WeakReference;
 
-import com.study.android.R;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -18,6 +17,8 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
+
+import com.inlook.or.study.R;
 
 public class BitmapActivity extends Activity {
 
@@ -39,7 +40,6 @@ public class BitmapActivity extends Activity {
         view.addView(imageView);
         
         mPlaceHolderBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.album_pictures_no);
-        loadBitmap(R.drawable.test1, imageView);
     }
     
     

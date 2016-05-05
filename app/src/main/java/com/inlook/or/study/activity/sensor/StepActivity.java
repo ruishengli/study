@@ -9,8 +9,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.study.android.R;
-import com.study.android.activity.BaseAppCompatActivity;
+import com.inlook.or.study.R;
+import com.inlook.or.study.activity.BaseAppCompatActivity;
+
 
 public class StepActivity extends BaseAppCompatActivity {
 

@@ -1,10 +1,11 @@
 package com.inlook.or.study.activity.ui;
 
-import com.study.android.R;
-import com.study.android.activity.BaseAppCompatActivity;
 
 import android.content.Intent;
 import android.view.View;
+
+import com.inlook.or.study.R;
+import com.inlook.or.study.activity.BaseAppCompatActivity;
 
 public class TranslucentSystemBarActivity extends BaseAppCompatActivity {
 

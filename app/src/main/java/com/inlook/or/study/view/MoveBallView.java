@@ -1,6 +1,5 @@
 package com.inlook.or.study.view;
 
-import com.study.android.model.Point;
 
 import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
@@ -12,6 +11,8 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.BounceInterpolator;
+
+import com.inlook.or.study.model.Point;
 
 public class MoveBallView extends View {
 

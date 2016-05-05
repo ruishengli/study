@@ -2,19 +2,56 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.inlook.or.study">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <service
+            android:name=".service.LockScreenService"
+            android:exported="true"
+            android:enabled="true" />
+
+        <activity android:name=".activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.anim.SimpleBounceAnimatorActivity" />
+        <activity android:name=".activity.bitmap.BitmapActivity" />
+        <activity android:name=".activity.bitmap.PorterDuffBitmapActivity" />
+        <activity android:name=".activity.bitmap.RoundBitmapActivity" />
+        <activity android:name=".activity.customview.CircleBarActivity" />
+        <activity android:name=".activity.customview.DynamicPointTextActivity" />
+        <activity android:name=".activity.customview.ShineTextActivity" />
+        <activity android:name=".activity.customview.ValueIncrementActivity" />
+        <activity android:name=".activity.ui.ToolbarActivity" />
+        <activity android:name=".activity.ui.TranslucentSystemBarActivity" />
+        <activity android:name=".activity.ui.ColorTranslucentBarActivity" />
+        <activity
+            android:name=".activity.ui.ImageTranslucentBarActivity"
+            android:theme="@style/ImageTranslucentBar" />
+        <activity android:name=".activity.sensor.CompassActivity" />
+        <activity android:name=".activity.sensor.StepActivity" />
+
+        <activity
+            android:name=".activity.LockScreenActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.package.name.lockscreen"
+            android:theme="@style/LockScreenBaseTheme" />
+
     </application>
 
 </manifest>

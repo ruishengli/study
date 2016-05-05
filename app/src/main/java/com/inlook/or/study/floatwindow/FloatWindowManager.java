@@ -4,9 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-import com.study.android.floatwindow.BigView.OnBigViewClickListener;
-import com.study.android.floatwindow.SmallView.OnSmallViewClickListener;
-import com.study.android.service.FloatWindowService;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -15,6 +12,8 @@ import android.graphics.PixelFormat;
 import android.view.Gravity;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
+
+import com.inlook.or.study.service.FloatWindowService;
 
 public class FloatWindowManager {
 
@@ -61,7 +60,7 @@ public class FloatWindowManager {
                 mSmallWindowParams.y = screenHeight / 2;
             }
 
-            mSmallView.setListener(new OnSmallViewClickListener() {
+            mSmallView.setListener(new SmallView.OnSmallViewClickListener() {
                 @Override
                 public void onClick() {
                     removeSmallView();
@@ -116,7 +115,7 @@ public class FloatWindowManager {
                 bigWindowParams.y = screenHeight / 2 - BigView.viewHeight / 2;
             }
 
-            mBigView.setListener(new OnBigViewClickListener() {
+            mBigView.setListener(new BigView.OnBigViewClickListener() {
 
                 @Override
                 public void onClose() {

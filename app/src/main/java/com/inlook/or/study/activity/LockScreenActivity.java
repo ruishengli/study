@@ -1,10 +1,11 @@
 package com.inlook.or.study.activity;
 
-import com.study.android.R;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import com.inlook.or.study.R;
 
 public class LockScreenActivity extends Activity {
 

@@ -1,7 +1,7 @@
 package com.inlook.or.study.activity.ui;
 
-import com.study.android.R;
-import com.study.android.activity.BaseAppCompatActivity;
+import  com.inlook.or.study.R;
+import  com.inlook.or.study.activity.BaseAppCompatActivity;
 
 import android.support.v7.widget.Toolbar;
 import android.os.Bundle;

@@ -2,7 +2,6 @@ package com.inlook.or.study.floatwindow;
 
 import java.lang.reflect.Field;
 
-import com.study.android.R;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -13,6 +12,8 @@ import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.inlook.or.study.R;
 
 public class SmallView extends LinearLayout {
 

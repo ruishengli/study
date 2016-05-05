@@ -1,9 +1,10 @@
 package com.inlook.or.study.activity.customview;
 
-import com.study.android.R;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.inlook.or.study.R;
 
 public class ValueIncrementActivity extends Activity {
 
