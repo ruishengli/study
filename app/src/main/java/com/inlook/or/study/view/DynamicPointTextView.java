@@ -1,6 +1,7 @@
 package com.inlook.or.study.view;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.os.Handler;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -49,8 +50,16 @@ public class DynamicPointTextView extends TextView {
     private void start(){
         mHandler.post(pointTask);
     }
-    
-    
+
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+    }
+
+
+
     private Runnable  pointTask = new Runnable(){
         @Override
         public void run() {

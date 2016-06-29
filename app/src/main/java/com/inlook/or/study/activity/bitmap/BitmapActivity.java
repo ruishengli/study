@@ -61,14 +61,14 @@ public class BitmapActivity extends Activity {
       return BitmapFactory.decodeResource(getResources(), resId, optios);
     }
     /**
-     * @param optios
+     * @param options
      * @param reqWidth
      * @param reqHeight
      * @return
      */
-    private int  calculateInSampleSize(BitmapFactory.Options optios ,int reqWidth,int reqHeight) {
-        int width = optios.outWidth;
-        int height = optios.outHeight;
+    private int  calculateInSampleSize(BitmapFactory.Options options ,int reqWidth,int reqHeight) {
+        int width = options.outWidth;
+        int height = options.outHeight;
         int inSampleSize = 1;
         if(width > reqWidth || height > reqHeight) {
             final int halfHeight = height/2;

@@ -13,9 +13,7 @@ public class CircleBarActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        
         setContentView(R.layout.circle_bar_view_activity);
-        
         CircleBar cb = (CircleBar) findViewById(R.id.circlebar);
         cb.setProgress(80);
     }

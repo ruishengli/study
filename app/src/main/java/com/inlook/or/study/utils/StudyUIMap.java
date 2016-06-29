@@ -16,6 +16,7 @@ import com.inlook.or.study.activity.customview.CircleBarActivity;
 import com.inlook.or.study.activity.customview.DynamicPointTextActivity;
 import com.inlook.or.study.activity.customview.ShineTextActivity;
 import com.inlook.or.study.activity.customview.ValueIncrementActivity;
+import com.inlook.or.study.activity.recyclerview.RecyclerViewMainActivity;
 import com.inlook.or.study.activity.sensor.CompassActivity;
 import com.inlook.or.study.activity.sensor.StepActivity;
 import com.inlook.or.study.activity.ui.ToolbarActivity;
@@ -59,7 +60,7 @@ public class StudyUIMap {
         uis.add(item);
         studyCategoryMap.put("ui", uis);
 
-        uis = new ArrayList<UIListItem>();
+        uis = new ArrayList<>();
         item = new UIListItem();
         item.setClazz(CompassActivity.class);
         item.setTitle("Compass");
@@ -72,14 +73,14 @@ public class StudyUIMap {
         studyCategoryMap.put("sensor", uis);
         
         
-        uis = new ArrayList<UIListItem>();
+        uis = new ArrayList<>();
         item = new UIListItem();
         item.setClazz(SimpleBounceAnimatorActivity.class);
         item.setTitle("SimpleBounceAnimator");
         uis.add(item);
         studyCategoryMap.put("anim", uis);
 
-        uis = new ArrayList<UIListItem>();
+        uis = new ArrayList<>();
         item = new UIListItem();
         item.setClazz(BitmapActivity.class);
         item.setTitle("BitmapActivity");
@@ -96,7 +97,7 @@ public class StudyUIMap {
         uis.add(item);
         studyCategoryMap.put("bitmap", uis);
 
-        uis = new ArrayList<UIListItem>();
+        uis = new ArrayList<>();
         
         item = new UIListItem();
         item.setClazz(ValueIncrementActivity.class);
@@ -118,5 +119,15 @@ public class StudyUIMap {
         item.setTitle("CircleBar");
         uis.add(item);
         studyCategoryMap.put("customerView", uis);
+
+
+
+        uis = new ArrayList<>();
+        item = new UIListItem();
+        item.setClazz(RecyclerViewMainActivity.class);
+        item.setTitle("normalRecyclerview");
+        uis.add(item);
+
+        studyCategoryMap.put("recyclerview", uis);
     }
 }

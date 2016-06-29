@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     >
 
-    <com.study.android.view.DynamicPointTextView
+    <com.inlook.or.study.view.DynamicPointTextView
         android:id="@+id/alpha_txt"
         android:textSize="18sp"
         android:layout_centerInParent="true"

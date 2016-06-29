@@ -26,9 +26,9 @@ public class MainActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         init();
-      //  startFloatWindow();
+       // startFloatWindow();
         
-        startLockScreenService();
+       // startLockScreenService();
     }
     
     
