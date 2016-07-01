@@ -8,11 +8,17 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
+        android:name="com.inlook.or.study.TestApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2b1e83958ff4fdfba1a91433dd4b8d42d2d049e0" />
+
         <service
             android:name=".service.LockScreenService"
             android:enabled="true"
