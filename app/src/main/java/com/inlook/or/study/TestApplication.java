@@ -4,6 +4,7 @@ import android.app.Application;
 import com.inlook.or.study.dagger.AnalyticsManager;
 import com.inlook.or.study.dagger.AppComponent;
 import com.inlook.or.study.dagger.AppModule;
+import com.inlook.or.study.dagger.DaggerActivityCompontent;
 import com.inlook.or.study.dagger.DaggerAppComponent;
 import com.inlook.or.study.dagger.DomainModule;
 
@@ -19,7 +20,7 @@ public class TestApplication extends Application {
     private static TestApplication mInstance;
 
     AppComponent mAppComponent = null;
-    @Inject
+   // @Inject
     AnalyticsManager analyticsManager;
 
     @Override
@@ -32,6 +33,8 @@ public class TestApplication extends Application {
                 .build();
 
         mAppComponent.inject(this);
+
+        analyticsManager = mAppComponent.getAnalyticsManager();
         analyticsManager.register();
     }
 

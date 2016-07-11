@@ -1,5 +1,6 @@
 package com.inlook.or.study;
 
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;

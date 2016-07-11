@@ -1,15 +1,12 @@
 package com.inlook.or.study.activity;
 
 import java.util.List;
-
-
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
-
 import com.inlook.or.study.R;
 import com.inlook.or.study.adapter.CommonAdapter;
 import com.inlook.or.study.adapter.ViewHolder;
@@ -18,6 +15,7 @@ import com.inlook.or.study.service.FloatWindowService;
 import com.inlook.or.study.service.LockScreenService;
 import com.inlook.or.study.utils.StudyUIMap;
 
+
 public class MainActivity extends ListActivity {
 
     private static final String EXTRA_CATEGORY = "category";
@@ -25,13 +23,26 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
+      //  logUser();
         init();
+
        // startFloatWindow();
         
        // startLockScreenService();
     }
-    
-    
+
+
+    private void logUser() {
+        // TODO: Use the current user's information
+        // You can call any combination of these three methods
+      /*  Crashlytics.setUserIdentifier("li987654321");
+        Crashlytics.setUserEmail("350677140@qq.com");
+        Crashlytics.setUserName("test");*/
+    }
+
+
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
        UIListItem item = mAdapter.getItem(position);
@@ -39,9 +50,14 @@ public class MainActivity extends ListActivity {
        if(item.getClazz() != null) {
            intent  = new Intent(this, item.getClazz());
        } else {
-           intent  = new Intent(this, MainActivity.class);
-           intent.putExtra(EXTRA_CATEGORY, item.getTitle());
-           intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+           List<UIListItem> categoryItems = StudyUIMap.get(item.getTitle());
+           if(categoryItems != null && categoryItems.size() ==1) {
+               intent  = new Intent(this, categoryItems.get(0).getClazz());
+           } else {
+               intent  = new Intent(this, MainActivity.class);
+               intent.putExtra(EXTRA_CATEGORY, item.getTitle());
+               intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+           }
        }
        startActivity(intent);
     }

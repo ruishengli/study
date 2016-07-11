@@ -19,6 +19,10 @@ import com.inlook.or.study.activity.customview.ValueIncrementActivity;
 import com.inlook.or.study.activity.recyclerview.RecyclerViewMainActivity;
 import com.inlook.or.study.activity.sensor.CompassActivity;
 import com.inlook.or.study.activity.sensor.StepActivity;
+import com.inlook.or.study.activity.supportlib.EntryAlwaysActivity;
+import com.inlook.or.study.activity.supportlib.ExitUntilActivity;
+import com.inlook.or.study.activity.supportlib.FloatingButtonActivity;
+import com.inlook.or.study.activity.supportlib.SnackbarActivity;
 import com.inlook.or.study.activity.ui.ToolbarActivity;
 import com.inlook.or.study.activity.ui.TranslucentSystemBarActivity;
 import com.inlook.or.study.model.UIListItem;
@@ -129,5 +133,30 @@ public class StudyUIMap {
         uis.add(item);
 
         studyCategoryMap.put("recyclerview", uis);
+
+
+
+        uis = new ArrayList<>();
+        item = new UIListItem();
+        item.setClazz(SnackbarActivity.class);
+        item.setTitle("Snackbar");
+        uis.add(item);
+
+        item = new UIListItem();
+        item.setClazz(FloatingButtonActivity.class);
+        item.setTitle("FloatingActionButton");
+        uis.add(item);
+
+        item = new UIListItem();
+        item.setClazz(EntryAlwaysActivity.class);
+        item.setTitle("EntryAlwaysActivity");
+        uis.add(item);
+
+        item = new UIListItem();
+        item.setClazz(ExitUntilActivity.class);
+        item.setTitle("ExitUntilActivity");
+        uis.add(item);
+
+        studyCategoryMap.put("SupportLib", uis);
     }
 }

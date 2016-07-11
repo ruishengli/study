@@ -13,19 +13,19 @@ public class ViewHolder {
     private View mConvertView;
     
     private ViewHolder(Context context,int layloutId,View convertView,ViewGroup parent){
-        mViews = new SparseArray<View>();
+        mViews = new SparseArray<>();
         mConvertView =  LayoutInflater.from(context).inflate(layloutId, parent, false);
         mConvertView.setTag(this);
     }
     
-    public <T extends View>T get(int viewId){
+    public View get(int viewId){
         View view = mViews.get(viewId);
         if(view == null) {
             view = mConvertView.findViewById(viewId);
             mViews.append(viewId, view);
         }
         
-        return (T)view;
+        return view;
     }
     
     public static ViewHolder getView(Context context,int layloutId,View convertView,ViewGroup parent){
