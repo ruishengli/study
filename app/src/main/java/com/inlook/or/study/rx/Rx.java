@@ -92,7 +92,7 @@ public class Rx {
         });
     }
 
-    public void showImage(final int drawableRes, final ImageView imageView) {
+   /* public void showImage(final int drawableRes, final ImageView imageView) {
         Observable.create(new Observable.OnSubscribe<Drawable>() {
             @Override
             public void call(Subscriber<? super Drawable> subscriber) {
@@ -116,7 +116,7 @@ public class Rx {
                     imageView.setImageDrawable(drawable);
                 }
             });
-    }
+    }*/
 
     public void testMap1(final String httpUrl) {
         Observable.create(new Observable.OnSubscribe<String>() {

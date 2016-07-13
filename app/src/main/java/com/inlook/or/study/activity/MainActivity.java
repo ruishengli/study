@@ -11,6 +11,7 @@ import com.inlook.or.study.R;
 import com.inlook.or.study.adapter.CommonAdapter;
 import com.inlook.or.study.adapter.ViewHolder;
 import com.inlook.or.study.model.UIListItem;
+import com.inlook.or.study.nohttp.NoHttp;
 import com.inlook.or.study.service.FloatWindowService;
 import com.inlook.or.study.service.LockScreenService;
 import com.inlook.or.study.utils.StudyUIMap;
@@ -31,6 +32,8 @@ public class MainActivity extends ListActivity {
        // startFloatWindow();
         
        // startLockScreenService();
+
+        NoHttp.testNoHttp();
     }
 
 
