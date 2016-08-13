@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.REAL_GET_TASKS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name=".TestApplication"
@@ -60,7 +61,10 @@
         <activity android:name=".activity.supportlib.SnackbarActivity" />
         <activity android:name=".activity.supportlib.FloatingButtonActivity" />
         <activity android:name=".activity.supportlib.EntryAlwaysActivity" />
-        <activity android:name=".activity.supportlib.ExitUntilActivity"></activity>
+        <activity android:name=".activity.supportlib.ExitUntilActivity" />
+        <activity android:name=".activity.contacts.ContactsActivity" />
+        <activity android:name=".activity.blurredview.BaseBlurredViewActivity" />
+        <activity android:name=".activity.blurredview.WeatherBlurredActivity"></activity>
     </application>
 
 </manifest>

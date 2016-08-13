@@ -12,6 +12,9 @@ import com.inlook.or.study.activity.anim.SimpleBounceAnimatorActivity;
 import com.inlook.or.study.activity.bitmap.BitmapActivity;
 import com.inlook.or.study.activity.bitmap.PorterDuffBitmapActivity;
 import com.inlook.or.study.activity.bitmap.RoundBitmapActivity;
+import com.inlook.or.study.activity.blurredview.BaseBlurredViewActivity;
+import com.inlook.or.study.activity.blurredview.WeatherBlurredActivity;
+import com.inlook.or.study.activity.contacts.ContactsActivity;
 import com.inlook.or.study.activity.customview.CircleBarActivity;
 import com.inlook.or.study.activity.customview.DynamicPointTextActivity;
 import com.inlook.or.study.activity.customview.ShineTextActivity;
@@ -158,5 +161,26 @@ public class StudyUIMap {
         uis.add(item);
 
         studyCategoryMap.put("SupportLib", uis);
+
+        uis = new ArrayList<>();
+        item = new UIListItem();
+        item.setClazz(ContactsActivity.class);
+        item.setTitle("Contacts");
+        uis.add(item);
+        studyCategoryMap.put("Contacts", uis);
+
+
+        uis = new ArrayList<>();
+        item = new UIListItem();
+        item.setClazz(BaseBlurredViewActivity.class);
+        item.setTitle("BaseBlurredView");
+        uis.add(item);
+
+        item = new UIListItem();
+        item.setClazz(WeatherBlurredActivity.class);
+        item.setTitle("WeatherBlurredView");
+        uis.add(item);
+
+        studyCategoryMap.put("BlurredView", uis);
     }
 }

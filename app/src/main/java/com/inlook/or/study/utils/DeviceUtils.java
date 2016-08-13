@@ -9,6 +9,11 @@ public class DeviceUtils {
         DisplayMetrics  displayMetrics = context.getResources().getDisplayMetrics();
         return displayMetrics.widthPixels;
     }
+    public static int getScreenHeight(Context context) {
+        DisplayMetrics  displayMetrics = context.getResources().getDisplayMetrics();
+        return displayMetrics.heightPixels;
+    }
+
     public static int dip2Px(Context context,int dipValue) {
         DisplayMetrics  displayMetrics = context.getResources().getDisplayMetrics();
         float scale  = displayMetrics.density;
